@@ -1,0 +1,72 @@
+.Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 38px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.Wrapper .Dropdown-header {
+  background-color: white;
+  border-color: #ccc;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.Wrapper .Dropdown-header-title-bold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.Wrapper .Dropdown-list {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.Wrapper .Dropdown-list li {
+  list-style-type: none;
+}
+
+.Wrapper .Dropdown-list li .list-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  font-size: 16px;
+  padding: 15px 20px 15px 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  text-align: left;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.Wrapper .Dropdown-list li .list-button img {
+  margin-right: 18px;
+}
+/*# sourceMappingURL=DropDown.css.map */

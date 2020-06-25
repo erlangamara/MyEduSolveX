@@ -1,5 +1,31 @@
 #navbar {
+  display: flex;
   position: sticky;
+  height: 97px;
+
+  .Logo-nav-menu {
+    flex: 1;
+    display: flex;
+  }
+
+  .Profile-nav-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    .Profile-nav {
+      display: flex;
+      margin-right: 136px;
+      height: 100%;
+
+      p {
+        margin-top: 28px;
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 .Logo {

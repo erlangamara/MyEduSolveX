@@ -7,6 +7,11 @@ import InstructureProfile from '../assets/InstructureProfile.svg';
 
 //Components
 import Card from '../components/Card';
+import DropDown from '../components/Dropdown';
+
+//Icon
+import Star from '../assets/DropdownMenu/Star.svg';
+import Exam from '../assets/DropdownMenu/Exam.svg';
 
 const CoursePage = () => {
 
@@ -19,11 +24,13 @@ const CoursePage = () => {
             <p className="Konten-title font-weight-bold">Konten Kelas</p>
             <p className="Durasi">4 Materi | Total Durasi 10 min</p>
           </div>
-          <Card cardTitle="Perkenalan" />
-          
-          <Card cardTitle="Pengertian Mengenai Komposisi" />
-          <Card cardTitle="Penggunaan Warna" />
-          <Card cardTitle="Assignment" />
+          <Card cardTitle="Perkenalan" isDropdown={true} />
+          <DropDown title="Konsep Dasar Desain Grafis" />
+          <Card cardTitle="Pengertian Mengenai Komposisi" isDropdown={true} />
+          <Card cardTitle="Penggunaan Warna" isDropdown={true} />
+          <Card cardTitle="Assignment" isDropdown={true} />
+          <Card cardTitle="Rating dan Ulasan" icon={Star} />
+          <Card cardTitle="Exam" icon={Exam} />
         </div>
         <div>
           <img className="Video" src={Video} />

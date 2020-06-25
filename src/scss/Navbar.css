@@ -1,6 +1,48 @@
 #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: -webkit-sticky;
   position: sticky;
+  height: 97px;
+}
+
+#navbar .Logo-nav-menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar .Profile-nav-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#navbar .Profile-nav-wrapper .Profile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 136px;
+  height: 100%;
+}
+
+#navbar .Profile-nav-wrapper .Profile-nav p {
+  margin-top: 28px;
+  margin-left: 15px;
 }
 
 .Logo {

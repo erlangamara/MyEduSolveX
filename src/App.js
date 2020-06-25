@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import './scss/CoursePage.css';
 import './scss/Navbar.css';
 import './scss/Footer.css';
+import './scss/DropDown.css';
 
 function App() {
   return (
