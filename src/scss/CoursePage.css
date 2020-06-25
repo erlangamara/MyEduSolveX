@@ -17,6 +17,7 @@
 .Course-content {
   width: 463px;
   margin-left: 24px;
+  padding-right: 20px;
 }
 
 .Course-content h2 {
@@ -29,5 +30,66 @@
 
 .Course-content .Durasi {
   font-size: 14px;
+}
+
+.Course-content .Card-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 443px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.Course-content .Card-size p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+
+.Course-content .Card-size img {
+  margin-right: 20px;
+}
+
+.Card-profile {
+  margin-top: 20px;
+  width: 929px;
+  height: 168px;
+  margin-bottom: 68px;
+}
+
+.Card-profile .Card-profile-title {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.Card-profile img {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.Card-profile .Instructure-data {
+  margin-left: 16px;
+}
+
+.Card-profile .Instructure-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.Card-profile .Instructure-description {
+  font-size: 14px;
+  line-height: 22px;
 }
 /*# sourceMappingURL=CoursePage.css.map */

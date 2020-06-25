@@ -1,3 +1,8 @@
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .Logo {
   margin-left: 66px;
   margin-top: 20px;
