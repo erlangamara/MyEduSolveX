@@ -1,0 +1,33 @@
+.Title {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.Upper-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Video {
+  margin-right: 24px;
+}
+
+.Course-content {
+  width: 463px;
+  margin-left: 24px;
+}
+
+.Course-content h2 {
+  margin-bottom: 20px;
+}
+
+.Course-content .Konten-title {
+  margin-right: 137px;
+}
+
+.Course-content .Durasi {
+  font-size: 14px;
+}
+/*# sourceMappingURL=CoursePage.css.map */
