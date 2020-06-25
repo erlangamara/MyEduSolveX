@@ -1,25 +1,81 @@
+@import './variables';
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
 .Title {
-  font-size: 30px;
+  font-size: 15px;
   line-height: 38px;
+
+  @include desktop {
+    font-size: 30px;
+    margin-left: 24px;
+    padding-right: 20px;
+  }
 }
 
 .Upper-container {
   margin-top: 30px;
-  display: flex;
+  display: grid;
+  // grid-template-columns: 1fr;
+  grid-template-areas: 
+    "title"
+    "video"
+    "content"
+    "instructor"
+    ;
+
+  @include desktop {
+    grid-template-areas: 
+    "title video"
+    "content video"
+    "content instructor"
+    ;
+  }
 }
 
 .Video {
-  margin-right: 24px;
+  grid-area: video;
+  // width: 100%;
+  
+  @include phone {
+    height: 205px;
+  }
+  
+  @include desktop {
+    margin-right: 24px;
+    // height: 100%;
+    // width: 100%;
+  }
 }
 
 
 .Course-content {
-  width: 463px;
-  margin-left: 24px;
-  padding-right: 20px;
+  width: 360px;
+  grid-area: content;
+
+  @include phone {
+    padding: 5px;
+  }
+  
+  @include desktop {
+    margin-left: 24px;
+    padding-right: 20px;
+    width: 463px;
+  }
 
   h2 {
     margin-bottom: 20px;
+    grid-area: title;
   }
 
   .Konten-title {
@@ -34,7 +90,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 443px;
+    width: 100%;
     height: 48px;
     margin-bottom: 32px;
 
@@ -52,38 +108,74 @@
 
 }
 
+
 .Card-profile {
   margin-top: 20px;
-  width: 929px;
+  width: 312px;
   height: 168px;
   margin-bottom: 68px;
-
+  grid-area: instructor;
+  
+  @include desktop {
+    width: 929px;
+    background-color: white;
+    border-color: #ccc;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 24px;
+  }
+  
   .Card-profile-title {
-    margin-left: 24px;
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    display: none;
+
+    @include desktop {
+      display: block;
+      margin-left: 24px;
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   img {
     // margin-top: 68px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    width: 32px;
+    height: 32px;
+    
+    @include desktop {
+      margin-left: 40px;
+      margin-bottom: 20px; 
+      width: 80px;
+      height: 80px;     
+    }
   }
 
   .Instructure-data {
     margin-left: 16px;
+
+    // @include phone {
+    //   display: none;
+    // }
   }
 
   .Instructure-name {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 20px;
+    // line-height: 20px;
+    font-size: 15px;
+    
+    @include desktop {
+      font-size: 24px;
+    }
   }
 
   .Instructure-description {
     font-size: 14px;
     line-height: 22px;
+
+    // @include phone {
+    //   display: none;
+    // }
   }
 }

@@ -1,17 +1,44 @@
+@import './variables';
+
 $left-padding: 136px;
 $top-padding: 20px;
+
+
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
 
 footer {
   height: 314px;
   width: 1440px;
 
+  @include phone {
+    height: 810px;
+    width: 375px;
+  }
+
   .Footer-upper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #000000;
-    height: 234px;
-    padding-left: $left-padding;
-    padding-top: $top-padding;
+    height: 648px;
+    // width: 375px;
+    padding-top: 0px;
+    
+    @include desktop {
+      height: 234px;
+      padding-top: $top-padding;
+      padding-left: $left-padding;
+      flex-direction: row;
+    }
     
     p {
       color: #FFFFFF;
@@ -35,7 +62,9 @@ footer {
       display: flex;
 
       .Footer-menu {
-        margin-left: 183px;
+        @include desktop {
+          margin-left: 183px;
+        }
   
         .Footer-menu-title {
           font-size: 24px;
@@ -46,8 +75,16 @@ footer {
 
   .Footer-lower {
     display: flex;
-    padding-left: $left-padding;
-    height: 80px;
+    height: 168px;
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    
+    @include desktop {
+      height: 80px;
+      padding-left: $left-padding;
+      flex-direction: row;
+    }
 
     .Legal {
       flex: 1;
@@ -64,10 +101,19 @@ footer {
       flex: 1;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      
+      @include desktop {
+        justify-content: flex-end;
+        align-items: center;
+      }
 
       .Social-media-content {
-        margin-right: 136px;
+        display: flex;
+        justify-content: center;
+        
+        @include desktop {
+          margin-right: 136px;
+        }
         
         .Social-media-icon {
           margin-right: 40px;

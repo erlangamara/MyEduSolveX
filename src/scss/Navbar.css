@@ -40,6 +40,12 @@
   height: 100%;
 }
 
+@media (max-width: 375px) {
+  #navbar .Profile-nav-wrapper .Profile-nav {
+    display: none;
+  }
+}
+
 #navbar .Profile-nav-wrapper .Profile-nav p {
   margin-top: 28px;
   margin-left: 15px;
@@ -50,5 +56,15 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 46px;
+}
+
+@media (max-width: 375px) {
+  .Logo {
+    width: 158px;
+    height: 23px;
+    margin-left: 16px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

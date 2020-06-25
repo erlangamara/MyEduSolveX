@@ -1,27 +1,73 @@
 .Title {
-  font-size: 30px;
+  font-size: 15px;
   line-height: 38px;
+}
+
+@media (min-width: 840px) {
+  .Title {
+    font-size: 30px;
+    margin-left: 24px;
+    padding-right: 20px;
+  }
 }
 
 .Upper-container {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title" "video" "content" "instructor";
+}
+
+@media (min-width: 840px) {
+  .Upper-container {
+        grid-template-areas: "title video" "content video" "content instructor";
+  }
 }
 
 .Video {
-  margin-right: 24px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: video;
+}
+
+@media (max-width: 375px) {
+  .Video {
+    height: 205px;
+  }
+}
+
+@media (min-width: 840px) {
+  .Video {
+    margin-right: 24px;
+  }
 }
 
 .Course-content {
-  width: 463px;
-  margin-left: 24px;
-  padding-right: 20px;
+  width: 360px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+@media (max-width: 375px) {
+  .Course-content {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 840px) {
+  .Course-content {
+    margin-left: 24px;
+    padding-right: 20px;
+    width: 463px;
+  }
 }
 
 .Course-content h2 {
   margin-bottom: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
 }
 
 .Course-content .Konten-title {
@@ -43,7 +89,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 443px;
+  width: 100%;
   height: 48px;
   margin-bottom: 32px;
 }
@@ -63,22 +109,53 @@
 
 .Card-profile {
   margin-top: 20px;
-  width: 929px;
+  width: 312px;
   height: 168px;
   margin-bottom: 68px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: instructor;
+}
+
+@media (min-width: 840px) {
+  .Card-profile {
+    width: 929px;
+    background-color: white;
+    border-color: #ccc;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 24px;
+  }
 }
 
 .Card-profile .Card-profile-title {
-  margin-left: 24px;
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  display: none;
+}
+
+@media (min-width: 840px) {
+  .Card-profile .Card-profile-title {
+    display: block;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .Card-profile img {
-  margin-left: 40px;
-  margin-bottom: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 840px) {
+  .Card-profile img {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .Card-profile .Instructure-data {
@@ -87,8 +164,13 @@
 
 .Card-profile .Instructure-name {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 20px;
+  font-size: 15px;
+}
+
+@media (min-width: 840px) {
+  .Card-profile .Instructure-name {
+    font-size: 24px;
+  }
 }
 
 .Card-profile .Instructure-description {

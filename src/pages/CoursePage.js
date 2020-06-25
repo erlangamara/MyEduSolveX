@@ -18,8 +18,8 @@ const CoursePage = () => {
   return(
     <div>
       <div className="Upper-container">
+        <h2 className="Title font-weight-bold">Desain Grafis Untuk Pemula</h2>
         <div className="Course-content">
-          <h2 className="Title font-weight-bold">Desain Grafis Untuk Pemula</h2>
           <div className="d-flex">
             <p className="Konten-title font-weight-bold">Konten Kelas</p>
             <p className="Durasi">4 Materi | Total Durasi 10 min</p>
@@ -32,9 +32,9 @@ const CoursePage = () => {
           <Card cardTitle="Rating dan Ulasan" icon={Star} />
           <Card cardTitle="Exam" icon={Exam} />
         </div>
-        <div>
+        {/* <div> */}
           <img className="Video" src={Video} />
-          <div class="card Card-profile">
+          <div class="Card-profile">
             <div className="card-body">
               <p className="Card-profile-title">Instruktur</p>
               <div className="d-flex align-items-center">
@@ -46,7 +46,7 @@ const CoursePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
