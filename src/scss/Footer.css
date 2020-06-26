@@ -20,7 +20,8 @@ footer .Footer-upper {
           flex-direction: column;
   background-color: #000000;
   height: 648px;
-  padding-top: 0px;
+  padding-top: 16px;
+  padding-left: 24px;
 }
 
 @media (min-width: 840px) {

@@ -1,6 +1,7 @@
 .Title {
   font-size: 15px;
   line-height: 38px;
+  margin-left: 10px;
 }
 
 @media (min-width: 840px) {
@@ -51,7 +52,7 @@
 
 @media (max-width: 375px) {
   .Course-content {
-    padding: 5px;
+    padding: 16px;
   }
 }
 
@@ -70,7 +71,7 @@
   grid-area: title;
 }
 
-.Course-content .Konten-title {
+.Course-content .Content-title {
   margin-right: 137px;
 }
 
@@ -105,6 +106,25 @@
 
 .Course-content .Card-size img {
   margin-right: 20px;
+}
+
+.Course-content .Side-menu-content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 840px) {
+  .Course-content .Side-menu-content-title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .Card-profile {

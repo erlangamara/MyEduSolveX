@@ -31,7 +31,8 @@ footer {
     background-color: #000000;
     height: 648px;
     // width: 375px;
-    padding-top: 0px;
+    padding-top: 16px;
+    padding-left: 24px;
     
     @include desktop {
       height: 234px;

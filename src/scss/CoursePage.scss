@@ -15,6 +15,7 @@
 .Title {
   font-size: 15px;
   line-height: 38px;
+  margin-left: 10px;
 
   @include desktop {
     font-size: 30px;
@@ -45,7 +46,6 @@
 
 .Video {
   grid-area: video;
-  // width: 100%;
   
   @include phone {
     height: 205px;
@@ -53,8 +53,6 @@
   
   @include desktop {
     margin-right: 24px;
-    // height: 100%;
-    // width: 100%;
   }
 }
 
@@ -64,7 +62,7 @@
   grid-area: content;
 
   @include phone {
-    padding: 5px;
+    padding: 16px;
   }
   
   @include desktop {
@@ -78,7 +76,7 @@
     grid-area: title;
   }
 
-  .Konten-title {
+  .Content-title {
     margin-right: 137px;
   }
 
@@ -103,6 +101,15 @@
 
     img {
       margin-right: 20px;
+    }
+  }
+
+  .Side-menu-content-title {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
     }
   }
 
@@ -140,7 +147,6 @@
   }
 
   img {
-    // margin-top: 68px;
     width: 32px;
     height: 32px;
     
@@ -154,15 +160,10 @@
 
   .Instructure-data {
     margin-left: 16px;
-
-    // @include phone {
-    //   display: none;
-    // }
   }
 
   .Instructure-name {
     font-weight: bold;
-    // line-height: 20px;
     font-size: 15px;
     
     @include desktop {
@@ -174,8 +175,5 @@
     font-size: 14px;
     line-height: 22px;
 
-    // @include phone {
-    //   display: none;
-    // }
   }
 }

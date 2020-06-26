@@ -20,8 +20,8 @@ const CoursePage = () => {
       <div className="Upper-container">
         <h2 className="Title font-weight-bold">Desain Grafis Untuk Pemula</h2>
         <div className="Course-content">
-          <div className="d-flex">
-            <p className="Konten-title font-weight-bold">Konten Kelas</p>
+          <div className="Side-menu-content-title">
+            <p className="Content-title font-weight-bold">Konten Kelas</p>
             <p className="Durasi">4 Materi | Total Durasi 10 min</p>
           </div>
           <Card cardTitle="Perkenalan" isDropdown={true} />
